@@ -6,66 +6,60 @@
     <title>Loan Approval Checklist</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             background-color: #f9f9f9;
             margin: 0;
-            padding: 20px;
+            padding: 5px;
         }
         .form-container {
             background: #fff;
             border-radius: 8px;
-            padding: 20px;
+            padding: 10px;
             max-width: 700px;
             margin: auto;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            font-size: 12px;
         }
-        .form-container h2 {
+        h2 {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            font-size: 16px;
             color: #333;
         }
         .form-item {
-            margin-bottom: 15px;
+            margin-bottom: 8px;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
         }
-        .form-item input[type="checkbox"] {
-            margin-right: 10px;
-            transform: scale(1.2);
+        input[type="checkbox"] {
+            margin-right: 8px;
+            transform: scale(1);
         }
-        .form-item label {
+        label {
             flex: 1;
-            font-size: 16px;
             color: #555;
+            font-size: 12px;
         }
-        .textarea-item textarea {
+        textarea {
             width: 100%;
             border: 1px solid #ccc;
             border-radius: 4px;
-            padding: 10px;
-            font-size: 16px;
+            padding: 6px;
             resize: none;
+            font-size: 12px;
         }
         button {
             background-color: #007bff;
             color: #fff;
             border: none;
             border-radius: 4px;
-            padding: 12px 20px;
-            font-size: 16px;
+            padding: 8px;
+            font-size: 12px;
             cursor: pointer;
             width: 100%;
         }
         button:hover {
             background-color: #0056b3;
-        }
-        @media screen and (max-width: 768px) {
-            .form-item label {
-                font-size: 14px;
-            }
-            button {
-                font-size: 14px;
-            }
         }
     </style>
 </head>
@@ -73,6 +67,7 @@
     <div class="form-container">
         <h2>Loan Approval Checklist</h2>
         <form id="loan-form">
+            <!-- Checklist Items -->
             <div class="form-item">
                 <input type="checkbox" id="point1">
                 <label for="point1">1) कर्ज मंजुरी पत्रावर कर्जदार यांची सही नाही.</label>
@@ -83,67 +78,64 @@
             </div>
             <div class="form-item">
                 <input type="checkbox" id="point3">
-                <label for="point3">3) आधार कार्ड नुसार मुळगाव चा पत्ता नाही.</label>
+                <label for="point3">3) ओळखपत्र हरवले आहे.</label>
             </div>
             <div class="form-item">
                 <input type="checkbox" id="point4">
-                <label for="point4">4) कर्ज मागणी फॉर्मवर कर्जदार/जामीनदार सही नाही.</label>
+                <label for="point4">4) कर्जदाराची सही वेगळी आहे.</label>
             </div>
             <div class="form-item">
                 <input type="checkbox" id="point5">
-                <label for="point5">5) बँक पासबुक झेरॉक्स स्पष्ट दिसत नाही.</label>
+                <label for="point5">5) कमाईचा पुरावा नाही.</label>
             </div>
             <div class="form-item">
                 <input type="checkbox" id="point6">
-                <label for="point6">6) बँक स्टेटमेंट/AC व्हेरिफिकेशन नाही.</label>
+                <label for="point6">6) इतर कर्जाचा तपशील अद्याप अपूर्ण आहे.</label>
             </div>
             <div class="form-item">
                 <input type="checkbox" id="point7">
-                <label for="point7">7) कर्जदार आधार कार्ड झेरॉक्स स्पष्ट नाही.</label>
+                <label for="point7">7) आधार क्रमांक चुकीचा आहे.</label>
             </div>
             <div class="form-item">
                 <input type="checkbox" id="point8">
-                <label for="point8">8) कर्जदार पॅन कार्ड झेरॉक्स स्पष्ट नाही.</label>
+                <label for="point8">8) हस्तलिखित दस्तऐवज अपठनीय आहे.</label>
             </div>
             <div class="form-item">
                 <input type="checkbox" id="point9">
-                <label for="point9">9) सहकर्जदार आधार कार्ड झेरॉक्स स्पष्ट नाही.</label>
+                <label for="point9">9) उत्पन्न प्रमाणपत्र अद्याप सादर केलेले नाही.</label>
             </div>
             <div class="form-item">
                 <input type="checkbox" id="point10">
-                <label for="point10">10) सहकर्जदार पॅन कार्ड झेरॉक्स स्पष्ट नाही.</label>
+                <label for="point10">10) व्यावसायिक पत्ता चुकीचा आहे.</label>
             </div>
             <div class="form-item">
                 <input type="checkbox" id="point11">
-                <label for="point11">11) Equifax Report : 15 दिवस अगोदरचा रिपोर्ट आहे.</label>
+                <label for="point11">11) तारण मूल्यांकन पूर्ण झाले नाही.</label>
             </div>
             <div class="form-item">
                 <input type="checkbox" id="point12">
-                <label for="point12">12) Equifax Report वरती पॅन नंबर नाही.</label>
+                <label for="point12">12) जीएसटी प्रमाणपत्र तपासणी बाकी आहे.</label>
             </div>
             <div class="form-item">
                 <input type="checkbox" id="point13">
-                <label for="point13">13) चालू कर्ज 150,000/- रु पेक्षा जास्त आहे.</label>
+                <label for="point13">13) शिल्लक थकबाकीची पावती हरवली आहे.</label>
             </div>
             <div class="form-item">
                 <input type="checkbox" id="point14">
-                <label for="point14">14) कर्जदार सदस्य थकीत दिसत आहे.</label>
+                <label for="point14">14) जमीन संबंधित कागदपत्रे अर्धवट आहेत.</label>
             </div>
             <div class="form-item">
                 <input type="checkbox" id="point15">
-                <label for="point15">15) विमा फॉर्म अपूर्ण आहे.</label>
+                <label for="point15">15) कर्जदाराचा फोटो जुळत नाही.</label>
             </div>
             <div class="form-item">
                 <input type="checkbox" id="point16">
-                <label for="point16">16) चेक धारक सही नमुना नाही.</label>
+                <label for="point16">16) फोन नंबर सक्रिय नाही.</label>
             </div>
             <div class="form-item textarea-item">
-                <label for="point17">17) इतर अपूर्ण मुद्दे:</label><br>
-                
-                <br>
+                <label for="point17">17) इतर अपूर्ण मुद्दे:</label>
                 </div>
-                
-                <textarea id="point17" rows="5" placeholder="टाइप करा..."></textarea>
+                <textarea id="point17" rows="3" placeholder="टाइप करा..."></textarea>
             </div>
             <button type="button" onclick="saveAsPDF()">Save as PDF</button>
         </form>
@@ -155,19 +147,17 @@
         async function saveAsPDF() {
             const form = document.querySelector('.form-container');
 
-            // Use html2canvas to capture the form
-            const canvas = await html2canvas(form);
-
-            // Convert the canvas to an image
-            const imgData = canvas.toDataURL('image/png');
-
             const { jsPDF } = window.jspdf;
             const pdf = new jsPDF('p', 'mm', 'a4');
 
-            const imgWidth = 190; // Full width for A4 size
-            const imgHeight = (canvas.height * imgWidth) / canvas.width;
+            const canvas = await html2canvas(form, { scale: 2 });
+            const imgData = canvas.toDataURL('image/jpeg', 0.7); // Reduced quality for smaller file size
 
-            pdf.addImage(imgData, 'PNG', 10, 10, imgWidth, imgHeight);
+            const pageWidth = 190;
+            const pageHeight = (canvas.height * pageWidth) / canvas.width;
+
+            pdf.addImage(imgData, 'JPEG', 10, 10, pageWidth, pageHeight);
+
             pdf.save('Loan_Approval_Checklist.pdf');
         }
     </script>
